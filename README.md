@@ -18,4 +18,4 @@ Solution: bind the innerHTML to a div nested in the ionic-content.
 
 * Using angular 4.3's HttpClient module will cause an issue with sending a request for text, as the text() function does not exist on the response object.
 
-Solution: attach {responseType: text} requestoption to indicate you're expecting a text-based response body.
+Solution: attach ```{responseType: text}``` requestoption to indicate you're expecting a text-based response body.
