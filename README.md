@@ -9,7 +9,7 @@ A simple Ionic demo for viewing a user's repos in github.
 
 Built using the tutorial on [gonehybrid.com](https://gonehybrid.com/build-your-first-mobile-app-with-ionic-2-angular-2)
 
-Fixes to issues in the tutoria:
+Fixes to issues in the tutorial:
 
 * Property binding [innerHTML] to a <ionic-content> component does not work as specified in the tutorial. 
 Throws: Uncaught TypeError: Cannot read property 'offsetHeight' of null
