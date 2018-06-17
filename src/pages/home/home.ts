@@ -16,7 +16,12 @@ export class HomePage {
 
 
   getRepos() {
-    this.githubProvider.getRepos(this.username).subscribe(response => this.repos = response, error => console.log(error));
+    this.githubProvider.getRepos(this.username).subscribe(response => this.repos = response, error => {
+        if (error.status == 404) {
+          this.repos = [];
+          alert("no results were found.");
+        }
+    });
 
   }
   navigateToDetails(repo) {
